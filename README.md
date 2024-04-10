@@ -1,0 +1,2 @@
+# Extract_Dialogue_kun_ja
+小説からセリフを抽出するくん
