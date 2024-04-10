@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css"
+            type="text/css"
+        />
+        <title>セリフ抽出</title>
+    </head>
+    <body>
+        <h1>セリフパーサー</h1>
+        <table>
+            <caption>
+                簡単な使い方
+            </caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">-</th>
+                    <th scope="col">type</th>
+                    <th scope="col">description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">input</th>
+                    <td>string</td>
+                    <td>小説など「」でくくられた文字列がある文章を入れる</td>
+                </tr>
+                <tr>
+                    <th scope="row">output</th>
+                    <td>string</td>
+                    <td>「」で囲まれた部分を抽出される</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <label for="input">input:</label>
+        <textarea id="input" placeholder="write" cols="30" rows="10"></textarea>
+        <button type="button" id="run_parser">run</button>
+        <label for="output">output:</label>
+        <textarea
+            id="output"
+            readonly="true"
+            placeholder="output"
+            cols="30"
+            rows="10"
+        ></textarea>
+        <button type="button" id="copy">copy</button>
+        <script src="parser.js"></script>
+    </body>
+</html>
